@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -14,6 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://montassar-portfolio-alpha.vercel.app";
+
+
+
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
@@ -29,9 +34,7 @@ export async function generateMetadata({
     notFound();
   }
 
-
-
-    const title =
+  const title =
     lang === "fr"
       ? "Montassar Hannachi | Ingénieur Cloud & DevOps"
       : "Montassar Hannachi | Junior Cloud & DevOps Engineer";
@@ -40,11 +43,12 @@ export async function generateMetadata({
     lang === "fr"
       ? "Découvrez les projets de Montassar Hannachi en Cloud, DevOps, Linux, OpenStack, Docker, Kubernetes et GitOps."
       : "Explore Montassar Hannachi's projects in Cloud, DevOps, Linux, OpenStack, Docker, Kubernetes and GitOps.";
-
-  return {
-    title,
+return {
+  metadataBase: new URL(siteUrl),
+  title,
     description,
     alternates: {
+      canonical: `/${lang}`,
       languages: {
         fr: "/fr",
         en: "/en",
@@ -53,6 +57,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
+      url: `/${lang}`,
       type: "website",
       siteName: "Montassar Hannachi Portfolio",
       locale: lang === "fr" ? "fr_FR" : "en_US",
