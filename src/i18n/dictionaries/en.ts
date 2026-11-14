@@ -59,6 +59,7 @@ const dictionary = {
       "Have an opportunity, a project, or want to discuss Cloud and DevOps? I would be happy to hear from you.",
     email: "montassarmh04@gmail.com",
     emailButton: "Get in touch",
+    linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
     instagramLabel: "Instagram",
     facebookLabel: "Facebook",

@@ -212,6 +212,16 @@ export default async function Home({
 
       <a
         className="contact-social"
+        href="https://www.linkedin.com/in/montassar-hannachi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {dictionary.contact.linkedinLabel}
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        className="contact-social"
         href="https://github.com/MontassarHannachi"
         target="_blank"
         rel="noopener noreferrer"
