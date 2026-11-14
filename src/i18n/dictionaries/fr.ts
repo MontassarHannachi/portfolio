@@ -13,7 +13,7 @@ const dictionary = {
     name: "Montassar Hannachi",
     role: "Junior Cloud & DevOps Engineer",
     description:
-      "Diplômé en Technologies de l'Informatique et étudiant en Master Cloud & DevOps, je m'intéresse à la conception, au déploiement et à la sécurisation des infrastructures Cloud. J'ai réalisé des projets pratiques autour d'OpenStack, Linux, des réseaux, de Docker et du déploiement Kubernetes avec GitOps.",
+      "Diplômé en Technologies de l'Informatique et étudiant en Master professionnel Cloud & DevOps, je développe mes compétences dans la conception, le déploiement et l'administration d'infrastructures informatiques. À travers mes projets pratiques, j'ai conçu une infrastructure Cloud privée avec OpenStack, sécurisé les communications inter-sites par VPN IPsec, déployé une solution de supervision avec Zabbix et expérimenté les pratiques DevOps avec Docker, Kubernetes et Flux CD. Je m'intéresse particulièrement à l'administration Linux, au Cloud Computing, à l'automatisation et au Platform Engineering. Mon objectif est de contribuer à des projets d'infrastructure et de déploiement tout en approfondissant mes compétences techniques.",
     expertise: "MES DOMAINES D'INTÉRÊT",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Découvrir mes projets",
@@ -75,7 +75,7 @@ const dictionary = {
         category: "CLOUD INFRASTRUCTURE",
         title: "Infrastructure Cloud sécurisée multi-site",
         description:
-          "Conception et déploiement d'une infrastructure Cloud privée avec OpenStack, sécurisation des communications inter-sites par VPN IPsec et supervision avec Zabbix.",
+          "Conception et déploiement d'une infrastructure Cloud privée avec OpenStack et Kolla-Ansible. Mise en place de deux sites interconnectés par un VPN IPsec IKEv2 via pfSense et supervision avec Zabbix. L'infrastructure comprend 7 machines virtuelles, 3 réseaux, 2 routeurs virtuels et 6 Floating IPs. Déploiement d'une application WordPress avec MySQL.",
         technologies: [
           "OpenStack",
           "Kolla-Ansible",
@@ -92,7 +92,7 @@ const dictionary = {
         category: "PLATFORM ENGINEERING",
         title: "Portail développeur avec Backstage",
         description:
-          "Mise en place d'un portail développeur avec catalogue logiciel, intégration GitHub Actions et template Scaffolder pour faciliter la création de microservices.",
+          "Configuration d'un portail développeur Backstage en environnement de laboratoire, avec catalogue logiciel, intégration GitHub Actions et backend PostgreSQL. Expérimentation de templates Scaffolder pour standardiser la création de microservices.",
         technologies: [
           "Backstage",
           "React",
@@ -108,7 +108,7 @@ const dictionary = {
         category: "KUBERNETES & GITOPS",
         title: "Déploiement automatisé avec GitOps",
         description:
-          "Mise en place d'une chaîne CI/CD pour tester et construire un microservice, publier son image sur GHCR et automatiser son déploiement Kubernetes avec Flux CD.",
+          "Développement d'un microservice REST avec Node.js et Express, automatisation des tests et de la construction d'images Docker avec GitHub Actions, publication sur GHCR et déploiement sur Minikube piloté par Flux CD depuis un dépôt GitOps centralisé.",
         technologies: [
           "Docker",
           "Kubernetes",
@@ -134,7 +134,7 @@ const dictionary = {
         category: "CONTAINERIZATION",
         title: "Application Flask conteneurisée",
         description:
-          "Conteneurisation d'une application Flask avec création de versions d'image, endpoint de santé et définition de limites de ressources Docker.",
+          "Développement et conteneurisation d'une application Flask avec Docker. Création d'images versionnées, mise en place d'un endpoint /health pour vérifier l'état de l'application et configuration de limites de ressources CPU et mémoire pour les conteneurs.",
         technologies: [
           "Python",
           "Flask",

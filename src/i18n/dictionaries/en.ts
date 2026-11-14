@@ -13,7 +13,7 @@ const dictionary = {
     name: "Montassar Hannachi",
     role: "Junior Cloud & DevOps Engineer",
     description:
-      "A graduate in Information Technology and currently pursuing a Master's in Cloud & DevOps, I focus on designing, deploying, and securing Cloud infrastructures. I have completed hands-on projects involving OpenStack, Linux, networking, Docker, and Kubernetes deployment with GitOps.",
+      "A graduate in Information Technology and currently pursuing a Professional Master's degree in Cloud & DevOps, I am developing my skills in designing, deploying, and administering IT infrastructures. Through hands-on projects, I have built a private Cloud infrastructure with OpenStack, secured inter-site communications using IPsec VPN, deployed monitoring with Zabbix, and explored DevOps practices with Docker, Kubernetes, and Flux CD. My main interests include Linux system administration, Cloud Computing, automation, and Platform Engineering. My goal is to contribute to infrastructure and deployment projects while continuously improving my technical skills.",
     expertise: "AREAS OF INTEREST",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Explore my projects",
@@ -75,7 +75,7 @@ const dictionary = {
         category: "CLOUD INFRASTRUCTURE",
         title: "Secure Multi-Site Cloud Infrastructure",
         description:
-          "Designed and deployed a private Cloud infrastructure using OpenStack, secured inter-site communications with IPsec VPN and monitored services with Zabbix.",
+          "Designed and deployed a private Cloud infrastructure using OpenStack and Kolla-Ansible. Connected two sites through an IPsec IKEv2 VPN using pfSense and implemented monitoring with Zabbix. The infrastructure includes 7 virtual machines, 3 networks, 2 virtual routers, and 6 Floating IPs. Deployed a WordPress application with MySQL.",
         technologies: [
           "OpenStack",
           "Kolla-Ansible",
@@ -92,7 +92,7 @@ const dictionary = {
         category: "PLATFORM ENGINEERING",
         title: "Developer Portal with Backstage",
         description:
-          "Built a developer portal featuring a software catalog, GitHub Actions integration and a Scaffolder template to streamline microservice creation.",
+          "Configured a Backstage developer portal in a lab environment, featuring a software catalog, GitHub Actions integration, and a PostgreSQL backend. Explored Scaffolder templates to standardize microservice creation.",
         technologies: [
           "Backstage",
           "React",
@@ -108,7 +108,7 @@ const dictionary = {
         category: "KUBERNETES & GITOPS",
         title: "Automated Deployment with GitOps",
         description:
-          "Implemented a CI/CD pipeline to test and build a microservice, publish its image to GHCR and automate Kubernetes deployment with Flux CD.",
+          "Developed a REST microservice with Node.js and Express, automated testing and Docker image builds with GitHub Actions, published images to GHCR, and deployed to Minikube using Flux CD and a centralized GitOps repository.",
         technologies: [
           "Docker",
           "Kubernetes",
@@ -134,7 +134,7 @@ const dictionary = {
         category: "CONTAINERIZATION",
         title: "Containerized Flask Application",
         description:
-          "Containerized a Flask application, created versioned Docker images, added a health endpoint and configured Docker resource limits.",
+          "Developed and containerized a Flask application with Docker. Created versioned images, added a /health endpoint to check application status, and configured CPU and memory resource limits for containers.",
         technologies: [
           "Python",
           "Flask",
