@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -89,10 +90,14 @@ export default async function Home({
               <span className="frame-indicator">●</span>
             </div>
 
-            <div className="monogram">
-              <span>M</span>
-              <span className="monogram-accent">H.</span>
-            </div>
+            <Image
+              src="/images/profile.webp"
+              alt={lang === "fr" ? "Portrait de Montassar Hannachi" : "Portrait of Montassar Hannachi"}
+              fill
+              priority
+              sizes="(max-width: 850px) 80vw, 350px"
+              className="profile-image"
+            />
 
             <div className="frame-bottom">
               <span>{hero.profileLabel}</span>
