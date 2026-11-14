@@ -43,9 +43,12 @@ export async function generateMetadata({
     lang === "fr"
       ? "Découvrez les projets de Montassar Hannachi en Cloud, DevOps, Linux, OpenStack, Docker, Kubernetes et GitOps."
       : "Explore Montassar Hannachi's projects in Cloud, DevOps, Linux, OpenStack, Docker, Kubernetes and GitOps.";
-return {
-  metadataBase: new URL(siteUrl),
-  title,
+  return {
+    metadataBase: new URL(siteUrl),
+    verification: {
+      google: "XjErATo-ZxfMOJhgUc7qwtOfNoHP6mEUt1mGRw1MigQ",
+    },
+    title,
     description,
     alternates: {
       canonical: `/${lang}`,
