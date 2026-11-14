@@ -60,6 +60,8 @@ const dictionary = {
     email: "montassarmh04@gmail.com",
     emailButton: "Get in touch",
     githubLabel: "GitHub",
+    instagramLabel: "Instagram",
+    facebookLabel: "Facebook",
   },
   projects: {
     eyebrow: "02 / SELECTED PROJECTS",

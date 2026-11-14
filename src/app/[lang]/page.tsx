@@ -219,6 +219,26 @@ export default async function Home({
         {dictionary.contact.githubLabel}
         <span aria-hidden="true">↗</span>
       </a>
+
+      <a
+        className="contact-social"
+        href="https://www.instagram.com/montassar___hannachi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {dictionary.contact.instagramLabel}
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        className="contact-social"
+        href="https://www.facebook.com/montassar.mh.5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {dictionary.contact.facebookLabel}
+        <span aria-hidden="true">↗</span>
+      </a>
     </div>
   </div>
 </section>
