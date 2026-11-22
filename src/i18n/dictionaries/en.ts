@@ -2,6 +2,9 @@ const dictionary = {
   language: "English",
   navigation: {
     about: "About",
+    experience: "Experience",
+    education: "Education",
+    certifications: "Certifications",
     skills: "Skills",
     projects: "Projects",
     contact: "Contact",
@@ -11,49 +14,101 @@ const dictionary = {
     availability: "PERSONAL PORTFOLIO",
     greeting: "Hello, I'm",
     name: "Montassar Hannachi",
-    role: "Junior Cloud & DevOps Engineer",
-    description:
-      "A graduate in Information Technology and currently pursuing a Professional Master's degree in Cloud & DevOps, I am developing my skills in designing, deploying, and administering IT infrastructures. Through hands-on projects, I have built a private Cloud infrastructure with OpenStack, secured inter-site communications using IPsec VPN, deployed monitoring with Zabbix, and explored DevOps practices with Docker, Kubernetes, and Flux CD. My main interests include Linux system administration, Cloud Computing, automation, and Platform Engineering. My goal is to contribute to infrastructure and deployment projects while continuously improving my technical skills.",
+    role: "Cloud, DevOps & System Administration",
+    description: "Information Technology graduate pursuing a Master’s in Cloud & DevOps at ISET Tozeur. I build projects with OpenStack, Linux, Docker, Kubernetes and Flux CD. Open to opportunities in Tunisia and internationally.",
     expertise: "AREAS OF INTEREST",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Explore my projects",
     githubButton: "Visit my GitHub",
-    cvButton: "CV coming soon",
     profileLabel: "CLOUD & DEVOPS",
   },
-  skills: {
-    eyebrow: "01 / TECHNICAL SKILLS",
-    title: "My Technical Environment",
-    intro: "Technologies and tools I have used in my projects and hands-on labs.",
-    categories: [
+
+
+  experience: {
+    eyebrow: "01 / EXPERIENCE",
+    title: "Professional Experience",
+    items: [
       {
-        number: "01",
-        title: "Cloud & Infrastructure",
-        description: "Design and administration of virtualized and Cloud infrastructures.",
-        technologies: ["OpenStack", "Kolla-Ansible", "VMware", "VirtualBox"],
+        period: "September 2022 – July 2026",
+        role: "Non-commissioned officer",
+        organization: "Ministry of National Defence — Tunisia",
       },
       {
-        number: "02",
-        title: "Linux & Networking",
-        description: "System administration, network configuration and secure communications.",
-        technologies: ["Linux", "Ubuntu", "Windows Server", "TCP/IP", "Cisco", "pfSense", "IPsec"],
-      },
-      {
-        number: "03",
-        title: "DevOps & Automation",
-        description: "Containerization, continuous integration and automated deployment.",
-        technologies: ["Docker", "Git", "GitHub Actions", "Kubernetes", "Minikube", "Flux CD"],
-      },
-      {
-        number: "04",
-        title: "Monitoring & Development",
-        description: "Service monitoring and application and script development.",
-        technologies: ["Zabbix", "Python", "Bash", "SQL", "Backstage", "Next.js"],
+        period: "January 2022 – February 2022",
+        role: "IT Support Intern",
+        organization: "Office of Civil Aviation and Airports (OACA) — Tozeur",
+        description: "Assisted with IT support activities and basic troubleshooting operations.",
       },
     ],
   },
+  education: {
+    eyebrow: "02 / EDUCATION",
+    title: "Academic Background",
+    items: [
+      {
+        period: "2026 – 2027",
+        degree: "Professional Master's Degree in Cloud & DevOps",
+        institution: "ISET Tozeur — Tunisia",
+      },
+      {
+        period: "2021 – 2026",
+        degree: "Applied Bachelor's Degree in Information Technology — Networks and Systems (RSI)",
+        institution: "ISET Tozeur — Tunisia",
+        detail: "Graduated in June 2026 — Good distinction",
+      },
+    ],
+  },
+  certifications: {
+    eyebrow: "03 / CERTIFICATIONS",
+    title: "Certifications & Additional Training",
+    items: [
+      { name: "CCNAv7 — Introduction to Networks", issuer: "Cisco Networking Academy", date: "July 2022" },
+      { name: "AI for Beginners", issuer: "HP LIFE", date: "November 2025" },
+      { name: "TechUp Explorer", issuer: "Udacity", date: "July 2026" },
+      { name: "Introduction to AI and Generative AI", issuer: "Udacity", date: "July 2026" },
+    ],
+  },
+
+skills: {
+  eyebrow: "04 / TECHNICAL SKILLS",
+  title: "Technical Skills",
+  intro: "Technologies and tools explored through my projects, hands-on labs and personal lab environment.",
+  categories: [
+    {
+      number: "01",
+      title: "Cloud & Virtualization",
+      description: "Deployment of OpenStack environments and management of cloud resources using Kolla-Ansible.",
+      technologies: ["OpenStack", "Kolla-Ansible", "VMware", "VirtualBox"],
+    },
+    {
+      number: "02",
+      title: "Systems & Networking",
+      description: "Linux and Windows environment administration, network configuration and VPN tunnel setup.",
+      technologies: ["Linux", "Ubuntu", "Windows Server", "Bash", "TCP/IP", "Cisco", "pfSense", "IPsec"],
+    },
+    {
+      number: "03",
+      title: "DevOps & GitOps",
+      description: "Containerization, continuous integration and application deployment with Kubernetes and Flux CD.",
+      technologies: ["Docker", "Git", "GitHub Actions", "Kubernetes", "Minikube", "Flux CD"],
+    },
+    {
+      number: "04",
+      title: "Monitoring & Platform Engineering",
+      description: "Service monitoring with Zabbix and experimentation with developer portals using Backstage.",
+      technologies: ["Zabbix", "Backstage"],
+    },
+    {
+      number: "05",
+      title: "Development & Scripting",
+      description: "Hands-on practice with Python, SQL and Next.js through projects and lab environments.",
+      technologies: ["Python", "SQL", "Next.js"],
+    },
+  ],
+},
+
   contact: {
-    eyebrow: "03 / CONTACT",
+    eyebrow: "06 / CONTACT",
     title: "Let's build something together",
     description:
       "Have an opportunity, a project, or want to discuss Cloud and DevOps? I would be happy to hear from you.",
@@ -61,11 +116,9 @@ const dictionary = {
     emailButton: "Get in touch",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
-    instagramLabel: "Instagram",
-    facebookLabel: "Facebook",
   },
   projects: {
-    eyebrow: "02 / SELECTED PROJECTS",
+    eyebrow: "05 / SELECTED PROJECTS",
     title: "My Work",
     intro:
       "Hands-on projects focused on Cloud infrastructure, automation, Platform Engineering and containerization.",
@@ -75,7 +128,7 @@ const dictionary = {
         category: "CLOUD INFRASTRUCTURE",
         title: "Secure Multi-Site Cloud Infrastructure",
         description:
-          "Designed and deployed a private Cloud infrastructure using OpenStack and Kolla-Ansible. Connected two sites through an IPsec IKEv2 VPN using pfSense and implemented monitoring with Zabbix. The infrastructure includes 7 virtual machines, 3 networks, 2 virtual routers, and 6 Floating IPs. Deployed a WordPress application with MySQL.",
+          "Designed and deployed a private Cloud infrastructure with OpenStack, initially implemented with DevStack to understand and validate the platform services. A second phase focused on deployment with Kolla-Ansible. Connected two sites through pfSense and an IPsec IKEv2 VPN, implemented monitoring with Zabbix, and deployed WordPress with a separate MySQL database. The DevStack phase validated 7 virtual machines, 3 networks, 2 virtual routers, and 6 Floating IPs.",
         technologies: [
           "OpenStack",
           "Kolla-Ansible",
@@ -85,7 +138,6 @@ const dictionary = {
           "Zabbix",
         ],
         links: [],
-        status: "Repository coming soon",
       },
       {
         number: "02",
@@ -100,8 +152,12 @@ const dictionary = {
           "PostgreSQL",
           "GitHub Actions",
         ],
-        links: [],
-        status: "Repository coming soon",
+        links: [
+          {
+            label: "View Repository",
+            url: "https://github.com/MontassarHannachi/platform-engineering-demo",
+          },
+        ],
       },
       {
         number: "03",
@@ -119,15 +175,14 @@ const dictionary = {
         ],
         links: [
           {
-            label: "GitOps Repository",
-            url: "https://github.com/MontassarHannachi/platform-gitops",
-          },
-          {
-            label: "Microservice",
+            label: "View Microservice",
             url: "https://github.com/MontassarHannachi/user-service",
           },
+          {
+            label: "View GitOps Repository",
+            url: "https://github.com/MontassarHannachi/platform-gitops",
+          },
         ],
-        status: "",
       },
       {
         number: "04",
@@ -147,7 +202,6 @@ const dictionary = {
             url: "https://github.com/MontassarHannachi/mini-projet-docker",
           },
         ],
-        status: "",
       },
     ],
   },

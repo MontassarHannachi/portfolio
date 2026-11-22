@@ -2,6 +2,9 @@ const dictionary = {
   language: "Français",
   navigation: {
     about: "À propos",
+    experience: "Expérience",
+    education: "Formation",
+    certifications: "Certifications",
     skills: "Compétences",
     projects: "Projets",
     contact: "Contact",
@@ -11,49 +14,101 @@ const dictionary = {
     availability: "PORTFOLIO PERSONNEL",
     greeting: "Bonjour, je suis",
     name: "Montassar Hannachi",
-    role: "Junior Cloud & DevOps Engineer",
-    description:
-      "Diplômé en Technologies de l'Informatique et étudiant en Master professionnel Cloud & DevOps, je développe mes compétences dans la conception, le déploiement et l'administration d'infrastructures informatiques. À travers mes projets pratiques, j'ai conçu une infrastructure Cloud privée avec OpenStack, sécurisé les communications inter-sites par VPN IPsec, déployé une solution de supervision avec Zabbix et expérimenté les pratiques DevOps avec Docker, Kubernetes et Flux CD. Je m'intéresse particulièrement à l'administration Linux, au Cloud Computing, à l'automatisation et au Platform Engineering. Mon objectif est de contribuer à des projets d'infrastructure et de déploiement tout en approfondissant mes compétences techniques.",
+    role: "Cloud, DevOps & System Administration",
+    description: "Diplômé en informatique et étudiant en Master Cloud & DevOps à l’ISET de Tozeur. Je réalise des projets avec OpenStack, Linux, Docker, Kubernetes et Flux CD. Ouvert aux opportunités en Tunisie et à l’international.",
     expertise: "MES DOMAINES D'INTÉRÊT",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Découvrir mes projets",
     githubButton: "Voir mon GitHub",
-    cvButton: "CV bientôt disponible",
     profileLabel: "CLOUD & DEVOPS",
   },
-  skills: {
-    eyebrow: "01 / COMPÉTENCES TECHNIQUES",
-    title: "Mon environnement technique",
-    intro: "Les technologies et outils que j’ai utilisés dans mes projets et travaux pratiques.",
-    categories: [
+
+
+  experience: {
+    eyebrow: "01 / EXPÉRIENCE",
+    title: "Parcours professionnel",
+    items: [
       {
-        number: "01",
-        title: "Cloud & Infrastructure",
-        description: "Conception et administration d’infrastructures virtualisées et Cloud.",
-        technologies: ["OpenStack", "Kolla-Ansible", "VMware", "VirtualBox"],
+        period: "Septembre 2022 – Juillet 2026",
+        role: "Sous-officier",
+        organization: "Ministère de la Défense nationale — Tunisie",
       },
       {
-        number: "02",
-        title: "Linux & Réseaux",
-        description: "Administration système, configuration réseau et sécurisation des communications.",
-        technologies: ["Linux", "Ubuntu", "Windows Server", "TCP/IP", "Cisco", "pfSense", "IPsec"],
-      },
-      {
-        number: "03",
-        title: "DevOps & Automatisation",
-        description: "Conteneurisation, intégration continue et déploiement automatisé.",
-        technologies: ["Docker", "Git", "GitHub Actions", "Kubernetes", "Minikube", "Flux CD"],
-      },
-      {
-        number: "04",
-        title: "Monitoring & Développement",
-        description: "Supervision des services et développement d’applications et de scripts.",
-        technologies: ["Zabbix", "Python", "Bash", "SQL", "Backstage", "Next.js"],
+        period: "Janvier 2022 – Février 2022",
+        role: "Stagiaire en support informatique",
+        organization: "Office de l’Aviation Civile et des Aéroports (OACA) — Tozeur",
+        description: "Participation aux activités de support informatique et assistance dans les opérations de dépannage.",
       },
     ],
   },
+  education: {
+    eyebrow: "02 / FORMATION",
+    title: "Formation académique",
+    items: [
+      {
+        period: "2026 – 2027",
+        degree: "Master professionnel en Cloud & DevOps",
+        institution: "ISET de Tozeur — Tunisie",
+      },
+      {
+        period: "2021 – 2026",
+        degree: "Licence appliquée en Technologies de l’Informatique — Réseaux et Systèmes Informatiques (RSI)",
+        institution: "ISET de Tozeur — Tunisie",
+        detail: "Diplôme obtenu en juin 2026 — Mention Bien",
+      },
+    ],
+  },
+  certifications: {
+    eyebrow: "03 / CERTIFICATIONS",
+    title: "Certifications et formations complémentaires",
+    items: [
+      { name: "CCNAv7 — Introduction to Networks", issuer: "Cisco Networking Academy", date: "Juillet 2022" },
+      { name: "AI for Beginners", issuer: "HP LIFE", date: "Novembre 2025" },
+      { name: "TechUp Explorer", issuer: "Udacity", date: "Juillet 2026" },
+      { name: "Introduction to AI and Generative AI", issuer: "Udacity", date: "Juillet 2026" },
+    ],
+  },
+
+skills: {
+  eyebrow: "04 / COMPÉTENCES TECHNIQUES",
+  title: "Compétences techniques",
+  intro: "Technologies et outils expérimentés à travers mes projets, mes travaux pratiques et mon environnement de laboratoire.",
+  categories: [
+    {
+      number: "01",
+      title: "Cloud & Virtualisation",
+      description: "Déploiement d'environnements OpenStack et gestion de ressources cloud avec Kolla-Ansible.",
+      technologies: ["OpenStack", "Kolla-Ansible", "VMware", "VirtualBox"],
+    },
+    {
+      number: "02",
+      title: "Systèmes & Réseaux",
+      description: "Administration des environnements Linux et Windows, configuration réseau et mise en place de tunnels VPN.",
+      technologies: ["Linux", "Ubuntu", "Windows Server", "Bash", "TCP/IP", "Cisco", "pfSense", "IPsec"],
+    },
+    {
+      number: "03",
+      title: "DevOps & GitOps",
+      description: "Conteneurisation, intégration continue et déploiement d'applications avec Kubernetes et Flux CD.",
+      technologies: ["Docker", "Git", "GitHub Actions", "Kubernetes", "Minikube", "Flux CD"],
+    },
+    {
+      number: "04",
+      title: "Supervision & Platform Engineering",
+      description: "Supervision des services avec Zabbix et expérimentation de portails développeur avec Backstage.",
+      technologies: ["Zabbix", "Backstage"],
+    },
+    {
+      number: "05",
+      title: "Développement & Scripting",
+      description: "Pratique de Python, SQL et Next.js à travers des projets et des environnements de laboratoire.",
+      technologies: ["Python", "SQL", "Next.js"],
+    },
+  ],
+},
+
   contact: {
-    eyebrow: "03 / CONTACT",
+    eyebrow: "06 / CONTACT",
     title: "Construisons quelque chose ensemble",
     description:
       "Vous avez une opportunité, un projet ou souhaitez échanger sur le Cloud et le DevOps ? Je serais ravi d'en discuter avec vous.",
@@ -61,21 +116,19 @@ const dictionary = {
     emailButton: "Me contacter",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
-    instagramLabel: "Instagram",
-    facebookLabel: "Facebook",
   },
   projects: {
-    eyebrow: "02 / PROJETS SÉLECTIONNÉS",
+    eyebrow: "05 / PROJETS SÉLECTIONNÉS",
     title: "Mes réalisations",
     intro:
       "Des projets pratiques autour du Cloud, de l'automatisation, du Platform Engineering et de la conteneurisation.",
     items: [
       {
         number: "01",
-        category: "CLOUD INFRASTRUCTURE",
+        category: "INFRASTRUCTURE CLOUD",
         title: "Infrastructure Cloud sécurisée multi-site",
         description:
-          "Conception et déploiement d'une infrastructure Cloud privée avec OpenStack et Kolla-Ansible. Mise en place de deux sites interconnectés par un VPN IPsec IKEv2 via pfSense et supervision avec Zabbix. L'infrastructure comprend 7 machines virtuelles, 3 réseaux, 2 routeurs virtuels et 6 Floating IPs. Déploiement d'une application WordPress avec MySQL.",
+          "Conception et déploiement d'une infrastructure Cloud privée avec OpenStack, initialement mise en œuvre avec DevStack pour comprendre et valider les services de la plateforme. Une seconde phase a porté sur le déploiement avec Kolla-Ansible. Interconnexion de deux sites via pfSense et un VPN IPsec IKEv2, supervision avec Zabbix et déploiement d'une application WordPress avec une base MySQL séparée. La phase DevStack a permis de valider 7 machines virtuelles, 3 réseaux, 2 routeurs virtuels et 6 Floating IPs.",
         technologies: [
           "OpenStack",
           "Kolla-Ansible",
@@ -85,7 +138,6 @@ const dictionary = {
           "Zabbix",
         ],
         links: [],
-        status: "Dépôt à publier",
       },
       {
         number: "02",
@@ -100,8 +152,12 @@ const dictionary = {
           "PostgreSQL",
           "GitHub Actions",
         ],
-        links: [],
-        status: "Dépôt à publier",
+        links: [
+          {
+            label: "Voir le dépôt",
+            url: "https://github.com/MontassarHannachi/platform-engineering-demo",
+          },
+        ],
       },
       {
         number: "03",
@@ -119,19 +175,18 @@ const dictionary = {
         ],
         links: [
           {
-            label: "Dépôt GitOps",
-            url: "https://github.com/MontassarHannachi/platform-gitops",
-          },
-          {
-            label: "Microservice",
+            label: "Voir le microservice",
             url: "https://github.com/MontassarHannachi/user-service",
           },
+          {
+            label: "Voir le dépôt GitOps",
+            url: "https://github.com/MontassarHannachi/platform-gitops",
+          },
         ],
-        status: "",
       },
       {
         number: "04",
-        category: "CONTAINERIZATION",
+        category: "CONTENEURISATION",
         title: "Application Flask conteneurisée",
         description:
           "Développement et conteneurisation d'une application Flask avec Docker. Création d'images versionnées, mise en place d'un endpoint /health pour vérifier l'état de l'application et configuration de limites de ressources CPU et mémoire pour les conteneurs.",
@@ -147,7 +202,6 @@ const dictionary = {
             url: "https://github.com/MontassarHannachi/mini-projet-docker",
           },
         ],
-        status: "",
       },
     ],
   },

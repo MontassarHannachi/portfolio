@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ThemeToggle from "@/components/ThemeToggle";
 import { isLocale } from "@/i18n/config";
 import fr from "@/i18n/dictionaries/fr";
 import en from "@/i18n/dictionaries/en";
@@ -27,16 +28,20 @@ export default async function Home({
   className="navigation"
   aria-label={lang === "fr" ? "Navigation principale" : "Main navigation"}
 >
-          <Link href={`/${lang}`} className="brand" aria-label="Home">
+          <Link href={`/${lang}`} className="brand" aria-label={lang === "fr" ? "Accueil" : "Home"}>
             MH<span>.</span>
           </Link>
 
           <div className="nav-links">
             <a href="#about">{dictionary.navigation.about}</a>
+            <a href="#experience">{dictionary.navigation.experience}</a>
+            <a href="#education">{dictionary.navigation.education}</a>
+            <a href="#certifications">{dictionary.navigation.certifications}</a>
             <a href="#skills">{dictionary.navigation.skills}</a>
             <a href="#projects">{dictionary.navigation.projects}</a>
             <a href="#contact">{dictionary.navigation.contact}</a>
             <LanguageSwitcher locale={lang} />
+            <ThemeToggle locale={lang} />
           </div>
         </nav>
       </header>
@@ -75,13 +80,9 @@ export default async function Home({
             </a>
           </div>
 
-          <p className="cv-notice" aria-disabled="true">
-            <span aria-hidden="true">↓</span>
-            {hero.cvButton}
-          </p>
         </div>
 
-        <div className="hero-visual" aria-hidden="true">
+        <div className="hero-visual">
           <div className="visual-glow" />
 
           <div className="visual-frame">
@@ -117,6 +118,61 @@ export default async function Home({
         </div>
       </section>
 
+
+
+      <section className="resume-section" id="experience">
+        <div className="resume-heading">
+          <p className="section-eyebrow">{dictionary.experience.eyebrow}</p>
+          <h2>{dictionary.experience.title}</h2>
+        </div>
+        <div className="resume-grid">
+          {dictionary.experience.items.map((item) => (
+            <article className="resume-card" key={item.period}>
+              <span className="resume-period">{item.period}</span>
+              <h3>{item.role}</h3>
+              <p className="resume-organization">{item.organization}</p>
+              {"description" in item && item.description && (
+                <p className="resume-detail">{item.description}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="resume-section" id="education">
+        <div className="resume-heading">
+          <p className="section-eyebrow">{dictionary.education.eyebrow}</p>
+          <h2>{dictionary.education.title}</h2>
+        </div>
+        <div className="resume-grid">
+          {dictionary.education.items.map((item) => (
+            <article className="resume-card" key={item.period}>
+              <span className="resume-period">{item.period}</span>
+              <h3>{item.degree}</h3>
+              <p className="resume-organization">{item.institution}</p>
+              {"detail" in item && item.detail && (
+                <p className="resume-detail">{item.detail}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="resume-section" id="certifications">
+        <div className="resume-heading">
+          <p className="section-eyebrow">{dictionary.certifications.eyebrow}</p>
+          <h2>{dictionary.certifications.title}</h2>
+        </div>
+        <div className="resume-grid certifications-grid">
+          {dictionary.certifications.items.map((item) => (
+            <article className="resume-card certification-card" key={item.name}>
+              <span className="resume-period">{item.date}</span>
+              <h3>{item.name}</h3>
+              <p className="resume-organization">{item.issuer}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
 <section className="skills-section" id="skills">
   <div className="skills-heading">
@@ -171,23 +227,21 @@ export default async function Home({
           ))}
         </div>
 
-        <div className="project-links">
-          {project.links.map((link) => (
-            <a
-              key={link.url}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              {link.label} <span aria-hidden="true">↗</span>
-            </a>
-          ))}
-
-          {project.status && (
-            <span className="project-status">{project.status}</span>
-          )}
-        </div>
+        {(project.links?.length ?? 0) > 0 && (
+          <div className="project-links">
+            {project.links?.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                {link.label} <span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        )}
       </article>
     ))}
   </div>
@@ -235,25 +289,6 @@ export default async function Home({
         <span aria-hidden="true">↗</span>
       </a>
 
-      <a
-        className="contact-social"
-        href="https://www.instagram.com/montassar___hannachi/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {dictionary.contact.instagramLabel}
-        <span aria-hidden="true">↗</span>
-      </a>
-
-      <a
-        className="contact-social"
-        href="https://www.facebook.com/montassar.mh.5"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {dictionary.contact.facebookLabel}
-        <span aria-hidden="true">↗</span>
-      </a>
     </div>
   </div>
 </section>

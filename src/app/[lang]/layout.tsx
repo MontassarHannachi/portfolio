@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { isLocale, locales } from "@/i18n/config";
@@ -36,8 +37,8 @@ export async function generateMetadata({
 
   const title =
     lang === "fr"
-      ? "Montassar Hannachi | Ingénieur Cloud & DevOps"
-      : "Montassar Hannachi | Junior Cloud & DevOps Engineer";
+      ? "Montassar Hannachi | Cloud, DevOps & Administration Système"
+      : "Montassar Hannachi | Cloud, DevOps & System Administration";
 
   const description =
     lang === "fr"
@@ -90,7 +91,15 @@ export default async function RootLayout({
     <html
       lang={lang}
       className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
     >
+      <Script id="theme-init" strategy="beforeInteractive">
+        {`try {
+          const theme = localStorage.getItem("portfolio-theme");
+          document.documentElement.dataset.theme =
+            theme === "light" ? "light" : "dark";
+        } catch {}`}
+      </Script>
       <body>{children}</body>
     </html>
   );
