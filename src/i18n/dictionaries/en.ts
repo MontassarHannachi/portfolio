@@ -11,21 +11,24 @@ const dictionary = {
   },
   hero: {
     location: "TOZEUR, TUNISIA",
-    availability: "PERSONAL PORTFOLIO",
     greeting: "Hello, I'm",
     name: "Montassar Hannachi",
-    role: "Cloud, DevOps & System Administration",
-    description: "An Information Technology graduate currently pursuing a Professional Master's degree in Cloud & DevOps at ISET Tozeur, I am interested in designing, deploying and managing IT infrastructure. Through hands-on projects, I have worked with OpenStack, Linux, Docker, Kubernetes and Flux CD, as well as secure network communications. My goal is to further develop my skills and contribute to projects in Cloud, DevOps and systems administration.",
-    expertise: "AREAS OF INTEREST",
-    technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
+    role: "Cloud, DevOps & Systems Administration",
+    description: "An Information Technology graduate, currently pursuing a Professional Master's degree in Cloud & DevOps at ISET Tozeur.",
     projectsButton: "Explore my projects",
     githubButton: "Visit my GitHub",
     profileLabel: "CLOUD & DEVOPS",
   },
 
+  about: {
+    eyebrow: "01 / ABOUT",
+    title: "A background focused on infrastructure and automation",
+    description: "I am interested in designing, deploying and managing IT infrastructure. Through hands-on projects, I have explored OpenStack, Linux, Docker, Kubernetes and Flux CD, along with infrastructure automation and security. I aim to further develop my skills and contribute to projects in Cloud, DevOps and systems administration.",
+  },
+
 
   experience: {
-    eyebrow: "01 / EXPERIENCE",
+    eyebrow: "02 / EXPERIENCE",
     title: "Professional Experience",
     items: [
       {
@@ -42,7 +45,7 @@ const dictionary = {
     ],
   },
   education: {
-    eyebrow: "02 / EDUCATION",
+    eyebrow: "03 / EDUCATION",
     title: "Academic Background",
     items: [
       {
@@ -52,14 +55,14 @@ const dictionary = {
       },
       {
         period: "2021 – 2026",
-        degree: "Applied Bachelor's Degree in Information Technology — Networks and Systems (RSI)",
+        degree: "Applied Bachelor's Degree in Information Technology — Computer Networks and Systems (RSI)",
         institution: "ISET Tozeur — Tunisia",
-        detail: "Graduated in June 2026 — Good distinction",
+        detail: "Graduated in June 2026 — awarded “Mention Bien”.",
       },
     ],
   },
   certifications: {
-    eyebrow: "03 / CERTIFICATIONS",
+    eyebrow: "04 / CERTIFICATIONS",
     title: "Certifications & Additional Training",
     items: [
       { name: "CCNAv7 — Introduction to Networks", issuer: "Cisco Networking Academy", date: "July 2022" },
@@ -70,9 +73,9 @@ const dictionary = {
   },
 
 skills: {
-  eyebrow: "04 / TECHNICAL SKILLS",
+  eyebrow: "05 / TECHNICAL SKILLS",
   title: "Technical Skills",
-  intro: "Technologies and tools explored through my projects, hands-on labs and personal lab environment.",
+  intro: "Technologies and tools applied across my projects, practical labs and personal lab environment.",
   categories: [
     {
       number: "01",
@@ -108,7 +111,7 @@ skills: {
 },
 
   contact: {
-    eyebrow: "06 / CONTACT",
+    eyebrow: "07 / CONTACT",
     title: "Let's build something together",
     description:
       "Have an opportunity, a project, or want to discuss Cloud and DevOps? I would be happy to hear from you.",
@@ -118,7 +121,7 @@ skills: {
     githubLabel: "GitHub",
   },
   projects: {
-    eyebrow: "05 / SELECTED PROJECTS",
+    eyebrow: "06 / SELECTED PROJECTS",
     title: "My Work",
     intro:
       "Hands-on projects focused on Cloud infrastructure, automation, Platform Engineering and containerization.",

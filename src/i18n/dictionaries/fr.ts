@@ -11,21 +11,24 @@ const dictionary = {
   },
   hero: {
     location: "TOZEUR, TUNISIE",
-    availability: "PORTFOLIO PERSONNEL",
     greeting: "Bonjour, je suis",
     name: "Montassar Hannachi",
-    role: "Cloud, DevOps & System Administration",
-    description: "Diplômé en Technologies de l’Informatique et actuellement étudiant en Master professionnel Cloud & DevOps à l’ISET de Tozeur, je m'intéresse à la conception, au déploiement et à l'administration d'infrastructures informatiques. À travers mes projets pratiques, j'ai travaillé avec OpenStack, Linux, Docker, Kubernetes et Flux CD, ainsi que sur la sécurisation des communications réseau. Mon objectif est de développer mes compétences et de contribuer à des projets dans les domaines du Cloud, du DevOps et de l'administration système.",
-    expertise: "MES DOMAINES D'INTÉRÊT",
-    technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
+    role: "Cloud, DevOps et administration système",
+    description: "Diplômé en Technologies de l’Informatique, je poursuis actuellement un Master professionnel en Cloud & DevOps à l’ISET de Tozeur.",
     projectsButton: "Découvrir mes projets",
     githubButton: "Voir mon GitHub",
     profileLabel: "CLOUD & DEVOPS",
   },
 
+  about: {
+    eyebrow: "01 / À PROPOS",
+    title: "Un parcours orienté vers les infrastructures et l’automatisation",
+    description: "Je m’intéresse à la conception, au déploiement et à l’administration d’infrastructures informatiques. Mes projets pratiques m’ont permis d’explorer OpenStack, Linux, Docker, Kubernetes et Flux CD, ainsi que l’automatisation et la sécurisation des infrastructures. Je souhaite approfondir mes compétences et contribuer à des projets dans les domaines du Cloud, du DevOps et de l’administration système.",
+  },
+
 
   experience: {
-    eyebrow: "01 / EXPÉRIENCE",
+    eyebrow: "02 / EXPÉRIENCE",
     title: "Parcours professionnel",
     items: [
       {
@@ -42,7 +45,7 @@ const dictionary = {
     ],
   },
   education: {
-    eyebrow: "02 / FORMATION",
+    eyebrow: "03 / FORMATION",
     title: "Formation académique",
     items: [
       {
@@ -59,7 +62,7 @@ const dictionary = {
     ],
   },
   certifications: {
-    eyebrow: "03 / CERTIFICATIONS",
+    eyebrow: "04 / CERTIFICATIONS",
     title: "Certifications et formations complémentaires",
     items: [
       { name: "CCNAv7 — Introduction to Networks", issuer: "Cisco Networking Academy", date: "Juillet 2022" },
@@ -70,9 +73,9 @@ const dictionary = {
   },
 
 skills: {
-  eyebrow: "04 / COMPÉTENCES TECHNIQUES",
+  eyebrow: "05 / COMPÉTENCES TECHNIQUES",
   title: "Compétences techniques",
-  intro: "Technologies et outils expérimentés à travers mes projets, mes travaux pratiques et mon environnement de laboratoire.",
+  intro: "Technologies et outils mobilisés dans mes projets, mes travaux pratiques et mon environnement de laboratoire.",
   categories: [
     {
       number: "01",
@@ -108,7 +111,7 @@ skills: {
 },
 
   contact: {
-    eyebrow: "06 / CONTACT",
+    eyebrow: "07 / CONTACT",
     title: "Construisons quelque chose ensemble",
     description:
       "Vous avez une opportunité, un projet ou souhaitez échanger sur le Cloud et le DevOps ? Je serais ravi d'en discuter avec vous.",
@@ -118,7 +121,7 @@ skills: {
     githubLabel: "GitHub",
   },
   projects: {
-    eyebrow: "05 / PROJETS SÉLECTIONNÉS",
+    eyebrow: "06 / PROJETS SÉLECTIONNÉS",
     title: "Mes réalisations",
     intro:
       "Des projets pratiques autour du Cloud, de l'automatisation, du Platform Engineering et de la conteneurisation.",

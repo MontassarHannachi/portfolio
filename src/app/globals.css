@@ -422,10 +422,6 @@ a {
     min-height: 400px;
   }
 
-  .nav-links {
-    gap: 16px;
-  }
-
   .floating-label-top {
     right: -8px;
   }
@@ -452,16 +448,6 @@ a {
 
   .brand {
     font-size: 25px;
-  }
-
-  .nav-links {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .nav-links > a {
-    font-size: 11px;
   }
 
   /* HERO */
@@ -1324,20 +1310,58 @@ html[data-theme="light"] .site-footer {
   .nav-links {
     width: 100%;
     flex-wrap: wrap;
-    gap: 14px 20px;
+    align-items: center;
+    gap: 8px 16px;
+  }
+
+  .nav-links > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 2px;
+  }
+
+  .nav-links > div {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 8px;
+  }
+
+  .nav-links > div a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 4px;
+  }
+
+  .theme-toggle {
+    min-height: 40px;
   }
 }
 
 @media (max-width: 650px) {
+  .navigation {
+    min-height: 75px;
+    gap: 14px;
+    padding: 15px 0;
+  }
+
   .nav-links {
-    gap: 12px;
+    gap: 8px 12px;
   }
 
   .nav-links > a {
     font-size: 12px;
   }
+}
 
-  .theme-toggle {
-    min-height: 34px;
+
+/* Prevent decorative glow overflow on very narrow screens */
+@media (max-width: 360px) {
+  .hero-visual .visual-glow {
+    width: min(340px, 100%);
+    height: auto;
+    aspect-ratio: 1;
   }
 }

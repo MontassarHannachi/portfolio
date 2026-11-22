@@ -46,13 +46,10 @@ export default async function Home({
         </nav>
       </header>
 
-      <section className="hero" id="about">
+      <section className="hero" id="home">
         <div className="hero-content">
           <div className="hero-location">
-            <span className="status-dot" />
             {hero.location}
-            <span className="location-divider">/</span>
-            {hero.availability}
           </div>
 
           <p className="hero-greeting">{hero.greeting}</p>
@@ -119,6 +116,14 @@ export default async function Home({
       </section>
 
 
+
+      <section className="about-section" id="about">
+        <div className="about-content">
+          <p className="section-eyebrow">{dictionary.about.eyebrow}</p>
+          <h2>{dictionary.about.title}</h2>
+          <p className="about-description">{dictionary.about.description}</p>
+        </div>
+      </section>
 
       <section className="resume-section" id="experience">
         <div className="resume-heading">
