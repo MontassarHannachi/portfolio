@@ -15,7 +15,7 @@ const dictionary = {
     greeting: "Hello, I'm",
     name: "Montassar Hannachi",
     role: "Cloud, DevOps & System Administration",
-    description: "Information Technology graduate pursuing a Master’s in Cloud & DevOps at ISET Tozeur. I build projects with OpenStack, Linux, Docker, Kubernetes and Flux CD. Open to opportunities in Tunisia and internationally.",
+    description: "An Information Technology graduate currently pursuing a Professional Master's degree in Cloud & DevOps at ISET Tozeur, I am interested in designing, deploying and managing IT infrastructure. Through hands-on projects, I have worked with OpenStack, Linux, Docker, Kubernetes and Flux CD, as well as secure network communications. My goal is to further develop my skills and contribute to projects in Cloud, DevOps and systems administration.",
     expertise: "AREAS OF INTEREST",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Explore my projects",

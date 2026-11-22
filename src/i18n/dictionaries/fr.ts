@@ -15,7 +15,7 @@ const dictionary = {
     greeting: "Bonjour, je suis",
     name: "Montassar Hannachi",
     role: "Cloud, DevOps & System Administration",
-    description: "Diplômé en informatique et étudiant en Master Cloud & DevOps à l’ISET de Tozeur. Je réalise des projets avec OpenStack, Linux, Docker, Kubernetes et Flux CD. Ouvert aux opportunités en Tunisie et à l’international.",
+    description: "Diplômé en Technologies de l’Informatique et actuellement étudiant en Master professionnel Cloud & DevOps à l’ISET de Tozeur, je m'intéresse à la conception, au déploiement et à l'administration d'infrastructures informatiques. À travers mes projets pratiques, j'ai travaillé avec OpenStack, Linux, Docker, Kubernetes et Flux CD, ainsi que sur la sécurisation des communications réseau. Mon objectif est de développer mes compétences et de contribuer à des projets dans les domaines du Cloud, du DevOps et de l'administration système.",
     expertise: "MES DOMAINES D'INTÉRÊT",
     technologies: ["CLOUD", "LINUX", "DEVOPS", "AUTOMATION"],
     projectsButton: "Découvrir mes projets",

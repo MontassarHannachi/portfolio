@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import type { Locale } from "@/i18n/config";
 
 type Theme = "dark" | "light";
@@ -29,6 +29,18 @@ export default function ThemeToggle({ locale }: { locale: Locale }) {
     getSnapshot,
     getServerSnapshot
   );
+
+  useEffect(() => {
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      const initialTheme = savedTheme === "light" ? "light" : "dark";
+
+      document.documentElement.dataset.theme = initialTheme;
+      window.dispatchEvent(new Event("portfolio-theme-change"));
+    } catch {
+      document.documentElement.dataset.theme = "dark";
+    }
+  }, []);
 
   function toggleTheme() {
     const next: Theme = theme === "dark" ? "light" : "dark";

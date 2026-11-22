@@ -1,6 +1,5 @@
 
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { isLocale, locales } from "@/i18n/config";
@@ -92,15 +91,11 @@ export default async function RootLayout({
       lang={lang}
       className={`${geistSans.variable} ${geistMono.variable}`}
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
     >
-      <Script id="theme-init" strategy="beforeInteractive">
-        {`try {
-          const theme = localStorage.getItem("portfolio-theme");
-          document.documentElement.dataset.theme =
-            theme === "light" ? "light" : "dark";
-        } catch {}`}
-      </Script>
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
